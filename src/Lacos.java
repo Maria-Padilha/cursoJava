@@ -2,11 +2,9 @@ import java.util.Scanner;
 
 public class Lacos {
     public static void main(String[] args) {
-        System.out.println("Laços de repetição");
-        System.out.println(" - Laço For");
-
+        System.out.println("LAÇOS DE REPETIÇÃO");
         System.out.println("");
-        System.out.println("TABUADA");
+        System.out.println("-Laço FOR");
 
         Scanner scan = new Scanner(System.in);
         System.out.printf("Escreva até qual valor você quer: ");
@@ -19,5 +17,28 @@ public class Lacos {
             int mult = tabuada * qualTabuada;
             System.out.println(qualTabuada + " x " + tabuada + " = " +mult);
         }
+
+        System.out.println("______________________________________");
+        System.out.println("");
+        System.out.println("-Laço WHILE");
+
+        int contador = 1;
+        while (contador <= 3) {
+            System.out.println(contador);
+            contador++;
+        }
+
+        System.out.println("______________________________________");
+        System.out.println("");
+        System.out.println("-Laço DO WHILE");
+
+        char novoJogo;
+        do{
+            System.out.printf("deseja jogar novamente? (s/n) ");
+            novoJogo = 'n';
+            
+        }while(novoJogo == 's');
+        System.out.println("n - GAME OVER");
+
     }
 }
