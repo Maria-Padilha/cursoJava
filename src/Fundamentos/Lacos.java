@@ -1,3 +1,4 @@
+package Fundamentos;
 import java.util.Scanner;
 
 public class Lacos {
