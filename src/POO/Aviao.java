@@ -6,4 +6,9 @@ public class Aviao extends Carro {
     void aterrizar(){
         System.out.println("-----------_________");
     }
+
+    // sobescrevendo um método
+    void acelerar(){
+        System.out.println("_______-------");
+    }
 }

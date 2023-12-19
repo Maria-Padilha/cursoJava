@@ -12,7 +12,7 @@ public class Cessna {
         System.out.println("cor: "+cessna.cor);
         System.out.println("envergadura: "+cessna.envergadura + "m");
 
-        cessna.aterrizar();
-        cessna.desligar();
+        cessna.ligar();
+        cessna.acelerar();
     }
 }
