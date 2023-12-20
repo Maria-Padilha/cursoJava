@@ -4,8 +4,6 @@ public class Conta {
     // atributos
     protected String cliente;
     protected double saldo;
-    protected double extrato;
-    protected String action;
 
     // construtor
     public Conta(){
@@ -17,11 +15,25 @@ public class Conta {
         System.out.println("Saldo: R$ "+saldo);
     }
 
-    protected void exibirExtrato(){
-        System.out.println("Saldo: R$ "+extrato);
+    void sacar(double valor){
+        saldo -= valor;
+        System.out.println("Saque: R$ "+valor);
     }
 
-    protected void exibirExtratoDetalhado(){
-        System.out.println("Saldo: R$ "+extrato);
+    void depositar(double valor){
+        saldo += valor;
+        System.out.println("Depósito: R$ "+valor);
     }
+
+    void transferir(Conta destino, double valor){
+        this.sacar(valor);
+        destino.depositar(valor);
+        System.out.println("Transferência: R$ "+valor);
+    }
+
+    double soma(double cc, double cc2){
+        double total = cc + cc2;
+        return total;
+    }
+
 }
